@@ -1,4 +1,4 @@
-# gulp-scss-starter
+<!-- # gulp-scss-starter
 
 ![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-scss-starter.svg)
 [![dependencies Status](https://david-dm.org/andreyalexeich/gulp-scss-starter/status.svg)](https://david-dm.org/andreyalexeich/gulp-scss-starter)
@@ -217,4 +217,4 @@ entry: {
 
 ## Контакты
 * ВКонтакте: [@andreyalexeich](https://vk.com/andreyalexeich)
-* Telegram: [@andreyalexeich](https://t-do.ru/andreyalexeich)
+* Telegram: [@andreyalexeich](https://t-do.ru/andreyalexeich) -->
