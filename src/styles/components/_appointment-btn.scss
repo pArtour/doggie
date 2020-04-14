@@ -1,0 +1,19 @@
+.appointment-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0;
+    background-color: $red;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: $bold;
+    font-size: 12px;
+    letter-spacing: 0.15px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    &:hover, &:focus {
+        cursor: pointer;
+        background-color: darken($color: $red, $amount: 7)
+    }
+}
