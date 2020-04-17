@@ -1,0 +1,105 @@
+.video {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $green;
+    color: #ffffff;
+    
+    background-image: url(../img/svg/video-blob.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    
+    &__text {
+        &-wrapper {
+            z-index: 2;
+        }
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__img {
+        display: none;
+    }
+    &__button {
+        width: 210px;
+        height: 48px;
+        border-radius: 7px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .video {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        background-image: url(../img/svg/line-ball.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: contain;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 310px;
+            height: 210px;
+            background-image: url(../img/svg/video-blob.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: contain;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 30px;
+            left: 0;
+            width: 180px;
+            height: 250px;
+            background-image: url(../img/svg/circles.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: contain;
+        }
+        &__text {
+            &-wrapper {
+                width: 411px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .video {
+        padding-top: 112px;
+        padding-bottom: 170px;
+
+        &::before {
+            width: 470px;
+            height: 340px;
+        }
+        &::after {
+            width: 236px;
+            height: 317px;
+        }
+        &__img {
+            display: block;
+            position: absolute;
+            z-index: 3;
+            bottom: 0;
+            left: 5px;
+            
+            width: 560px;
+            height: 370px;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .video {
+        &__img {
+            width: 730px;
+            height: 465px;
+        }
+    }
+}
