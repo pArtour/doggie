@@ -83,10 +83,6 @@
     &__option {
         color: $dark;
         font-size: 20px;
-        // background-color: transparent;
-        // background: none;
-        //  background: olive linear-gradient(olive, olive);
-        // background: transparent;
         border: none;
         cursor: pointer;
 
@@ -130,7 +126,7 @@
                 background-color: $blue;
                 border-radius: 20px;
                 padding: 35px 30px;
-                box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24);
+                box-shadow: 0 16px 24px rgba(38, 38, 38, 0.2), 0 8px 16px rgba(38, 38, 38, 0.24);
             }
         }
         &__text {
@@ -197,9 +193,6 @@
 
         &__input:not(textarea) {
             width: 224px;
-            // &:last-child {
-            //     width: 100%;
-            // }
             &:nth-child(2n) {
                 margin-left: 19px;
             }
@@ -216,7 +209,6 @@
     .appointment {
         &::after {
             left: 10px;
-            // transform: translateX(-50%);
         }
         &::before {
             left: 10%;
