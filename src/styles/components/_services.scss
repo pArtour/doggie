@@ -1,10 +1,7 @@
 .services {
+    overflow: hidden;
     padding-top: 40px;
     padding-bottom: 40px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
     &__heading {
         margin-bottom: 30px;
@@ -46,10 +43,23 @@
 }
 @media screen and (min-width: 768px) {
     .services {
-        background-image: url(../img/svg/services-blob.svg);
-        background-repeat: no-repeat;
-        background-position: 440px -300px;
-        background-size: contain;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -50%;
+            right: -50%;
+
+            width: 800px;
+            height: 700px;
+
+            background-image: url(../img/svg/services-blob.svg);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            background-size: contain;
+            transform: translate(10%, 40%);
+        }
 
         &__item {
             position: relative;
@@ -64,6 +74,74 @@
             &-title {
                 margin-bottom: 15px;
             }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .services {
+        &::before {
+            width: 900px;
+            height: 900px;
+            transform: translate(5%, 10%);
+        }
+        &__list {
+            display: grid;
+            justify-items: space-between;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50%;
+            grid-column-gap: 25px;
+            grid-row-gap: 25px;
+            margin: 0 auto;
+            margin-bottom: 66px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 50px 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            // margin-bottom: 24px;
+            &:last-child {
+                padding-bottom: 50px;
+            }
+            &-text {
+                text-align: center;
+            }
+            &-img {
+                position: static;
+                margin-bottom: 33px;
+            }
+            &-title {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
+    .services {
+        &::before {
+            width: 1200px;
+            transform: translate(0, 0);
+        }
+        &__list {
+            grid-gap: 35px;
+        }
+        &__item {
+            padding: 70px 45px;
+            &:last-child {
+                padding-bottom: 70px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .services {
+         &::before {
+            width: 1300px;
+            height: 1000px;
         }
     }
 }
