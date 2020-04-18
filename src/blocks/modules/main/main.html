@@ -127,4 +127,29 @@
             <a href="#" class="services__link appointment-btn">Learn more</a>
         </div>
     </section>
+    <section class="appointment">
+        <div class="appointment__container container">
+            <div class="appointment__form-wrapper">
+                <h2 class="appointment__title title">Make an appointment</h2>
+                <form action="#" class="appointment__form">
+                    <input type="text" name="name" id="name" class="appointment__input" placeholder="Name">
+                    <input type="email" name="mail" id="mail" class="appointment__input" placeholder="Email">
+                    <input type="tel" name="tel" id="tel" class="appointment__input" placeholder="Phone Number">
+                    <select name="services" id="service-select" class="appointment__input appointment__input_select">
+                        <option class="appointment__option" value="" hidden disabled selected>Select Service</option>
+                        <option class="appointment__option" value="first">Service number 1</option>
+                        <option class="appointment__option" value="second">Service number 2</option>
+                        <option class="appointment__option" value="third">Service number 3</option>
+                    </select>
+                    <textarea class="appointment__input appointment__textarea" name="about" id="about-textarea" cols="30" rows="10" placeholder="Tell us about your puppers include his/her name"></textarea>
+                    <button class="appointment__submit-btn appointment-btn" type="submit">Make an appointment</button>
+                </form>
+            </div>
+            <div class="appointment__text-wrapper">
+                <h3 class="appointment__text">Maxime placeat facere possimus omnis</h3>
+                <p class="appointment__counts">5,700+</p>
+                <span class="appointment__small">customers served</span>
+            </div>
+        </div>
+    </section>
 </main>

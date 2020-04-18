@@ -12,6 +12,7 @@
     letter-spacing: 0.15px;
     transition: all .3s ease;
     &:hover, &:focus {
+        outline: none;
         cursor: pointer;
         background-color: darken($color: $red, $amount: 7)
     }

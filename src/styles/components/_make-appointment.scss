@@ -1,0 +1,206 @@
+.appointment {
+    background-color: $blue;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 30px;
+
+        &-wrapper {
+            text-align: center;
+            order: -1;
+            font-weight: $black;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__counts {
+        margin: 0;
+        font-size: 80px;
+        line-height: 56px;
+        margin-bottom: 40px;
+    }
+
+    &__small {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        color: $gray;
+
+        &-wrapper {
+            text-align: center;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 15px;
+        border: 2px solid $gray;
+        padding: 16px 24px;
+        background: transparent;
+        border-radius: 10px;
+        color: #ffffff;
+
+        &::placeholder {
+            color: $gray;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $green;
+        }
+
+        &_select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            /* наследует от родителя */
+            &::-ms-expand {
+                /* для IE */
+                display: none;
+            }
+
+            cursor: pointer;
+        }
+    }
+
+    &__option {
+        color: $dark;
+        font-size: 20px;
+        // background-color: transparent;
+        // background: none;
+        //  background: olive linear-gradient(olive, olive);
+        // background: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:checked {
+            color: $red;
+        }
+    }
+
+    &__submit-btn {
+        width: 210px;
+        height: 48px;
+        border-radius: 7px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    .appointment {
+        background-color: $green;
+        background-image: url(../img/appointment-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 130px;
+        padding-bottom: 210px;
+        &__container {
+            flex: 1;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__title {
+            width: 100%;
+        }
+        &__form {
+            &-wrapper {
+                display: flex;
+                flex: 1;
+                flex-wrap: wrap;
+                max-width: 585px;
+                margin-right: 10px;
+                background-color: $blue;
+                border-radius: 20px;
+                padding: 35px 30px;
+            }
+        }
+        &__text {
+            margin-bottom: 50px;
+            &-wrapper {
+                flex: 1;
+                order: 2;
+                max-width: 324px;
+            }
+        }
+        &__counts {
+            margin-bottom: 50px;
+        }
+        &__input {
+            margin-bottom: 20px;
+        }
+        &__submit-btn {
+            margin: 0;
+            margin-left: auto;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .appointment {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            top: 50%;
+            left: -100px;
+            width: 640px;
+            height: 725px;
+            transform: translateY(-40%);
+            background-image: url(../img/svg/form-blob.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        &__title {
+            margin-bottom: 43px;
+        }
+        &__form {
+            &-wrapper {
+                position: static;
+                z-index: 1;
+                padding: 76px 57px;
+            }
+        }
+
+        &__input:not(textarea) {
+            width: 224px;
+            // &:last-child {
+            //     width: 100%;
+            // }
+            &:nth-child(2n) {
+                margin-left: 19px;
+            }
+        }
+        &__textarea {
+            margin-bottom: 30px;
+        }
+        &__counts {
+            font-size: 96px;
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .appointment {
+        &::after {
+            left: 100px;
+        }
+    }
+}

@@ -79,6 +79,8 @@
 }
 @media screen and (min-width: 1024px) {
     .services {
+        padding-top: 110px;
+        padding-bottom: 110px;
         &::before {
             width: 900px;
             height: 900px;
