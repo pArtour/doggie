@@ -39,11 +39,6 @@
         padding-top: 80px;
         padding-bottom: 80px;
 
-        background-image: url(../img/svg/customers-blob.svg);
-        background-repeat: no-repeat;
-        background-position: -50px -300px;
-        background-size: contain;
-
         &__title {
             margin-bottom: 45px;
         }
@@ -62,7 +57,6 @@
     .customers {
         padding-top: 120px;
         padding-bottom: 120px;
-        background-position: -20px -200px;
         &__container {
             display: flex;
             flex-direction: row;

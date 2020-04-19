@@ -153,8 +153,77 @@
         </div>
     </section>
     <section class="gallery">
-        <div class="gallery__container container">
-
+        <div class="gallery__container">
+            <h3 class="gallery__heading heading">
+                <svg class="heading__svg" width="28" height="27" viewBox="0 0 28 27" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="gallery__heading-path"
+                        d="M11.2718 6.61768L9.71338 8.17282L14.7755 13.2353L9.71338 18.2978L11.2718 19.853L17.9034 13.2353L11.2718 6.61768Z"
+                        fill="#5D62B5" />
+                    <path class="gallery__heading-path"
+                        d="M10.5905 10.4228L9.72474 9.55884L6.04053 13.2353L9.72474 16.9118L10.5905 16.0478L7.77825 13.2353L10.5905 10.4228Z"
+                        fill="#5D62B5" />
+                </svg>
+                Gallery & live streams
+            </h3>
+            <h2 class="gallery__title title">Check out our hard workers</h2>
+            <div class="gallery__accordion">
+                <ul class="gallery__tab">
+                    <li class="gallery__tab-item">
+                        <button class="gallery__tab-btn gallery__tab-btn_active">Gallery</button>
+                    </li>
+                    <li class="gallery__tab-item">
+                        <button class="gallery__tab-btn gallery__tab-stream-btn gallery__tab-stream-btn_live">Live stream: Yard 1</button>
+                    </li>
+                    <li class="gallery__tab-item">
+                        <button class="gallery__tab-btn gallery__tab-stream-btn gallery__tab-stream-btn_live">Live stream: Yard 2</button>
+                    </li>
+                    <li class="gallery__tab-item">
+                        <button class="gallery__tab-btn  gallery__tab-stream-btn ">Live stream: Yard 3</button>
+                    </li>
+                </ul>
+                <ul class="gallery__accordion-list">
+                    <li class="gallery__accordion-item gallery__accordion-item_active">
+                        <button class="gallery__btn gallery__accordion-btn gallery__accordion-btn_active">Gallery</button>
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="./img/gallery-1.jpg" alt="Image 1" class="gallery__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/gallery-2.jpg" alt="Image 2" class="gallery__img">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </li>
+                    <li class="gallery__accordion-item">
+                        <button class="gallery__btn gallery__accordion-btn">Live stream: Yard 1</button>
+                        <div class="gallery__accordion-video">
+                            <!-- video player -->
+                            <span class="gallery__accordion-live live">Live</span>
+                        </div>
+                    </li>
+                    <li class="gallery__accordion-item">
+                        <button class="gallery__btn gallery__accordion-btn">Live stream: Yard 2</button>
+                        <div class="gallery__accordion-video">
+                            <!-- video player -->
+                            <span class="gallery__accordion-live live">Live</span>
+                            <!-- <img src="./img/gallery-2.jpg" alt="Image 2" class="gallery__img"> -->
+                        </div>
+                    </li>
+                    <li class="gallery__accordion-item">
+                        <button class="gallery__btn gallery__accordion-btn">Live stream: Yard 3</button>
+                        <div class="gallery__accordion-video">
+                            <!-- video player -->
+                            <span class="gallery__accordion-live">Live</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="customers">
