@@ -99,7 +99,7 @@
             }
             &::after {
                 bottom: -3%;
-                left: 0%;
+                left: 5%;
                 width: 600px;
             }
         }
@@ -116,12 +116,27 @@
 @media screen and (min-width: 1280px) {
     .about {
         &__container {
-            width: 1020px;
+            padding-left: 80px;
+            padding-right: 80px;
             &::before {
                 top: -110px;
-                right: -50px;
+                right: -40px;
                 width: 201px;
                 height: 317px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .about {
+        &__text {
+            margin-bottom: 10px;
+        }
+        &__container {
+            max-width: 1440px;
+            margin: 0 auto;
+            &::after {
+                left: 10%;
             }
         }
     }

@@ -157,13 +157,13 @@
     .impact {
         &__container {
             &::before {
-                right: -50px;
+                right: -15px;
             }
         }
         &__img {
+            right: 0;
             width: 527px;
             height: 336px;
-            right: 0;
         }
         &__appointment {
             &-block {
