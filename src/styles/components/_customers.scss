@@ -36,6 +36,10 @@
 }
 @media screen and (min-width: 768px) {
     .customers {
+        background-image: url(../img/svg/customers-blob.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: -130px -100px;
         padding-top: 80px;
         padding-bottom: 80px;
 
@@ -55,6 +59,8 @@
 }
 @media screen and (min-width: 1024px) {
     .customers {
+        
+        background-position: -130px -80px;
         padding-top: 120px;
         padding-bottom: 120px;
         &__container {
@@ -95,7 +101,6 @@
     .customers {
         padding-top: 240px;
         padding-bottom: 210px;
-        background-size: 50%;
-        background-position: -200px 80%;
+        background-position: -120px -60px;
     }
 }

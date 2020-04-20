@@ -1,7 +1,10 @@
 const scroll = (btnSelector, scrollToBlock) => {
     const btns = document.querySelectorAll(`.${btnSelector}`);
     
-    const buttonClick = () => {
+    const buttonClick = event => {
+        console.log(event);
+        
+        event.preventDefault();
         const scrollTarget = document.querySelector(`.${scrollToBlock}`);
         const topOffset = 0; // 0 by default but can be changed if top offset is needed
         const elementPosition = scrollTarget.getBoundingClientRect().top;
@@ -13,6 +16,6 @@ const scroll = (btnSelector, scrollToBlock) => {
         });
     };
 
-    btns.forEach(btn => btn.parentNode.tagName !== 'form'.toUpperCase() ? btn.addEventListener('click', buttonClick) : null);
+    btns.forEach(btn => btn.parentNode.tagName !== 'form'.toUpperCase() ? btn.addEventListener('click', buttonClick) : null)
 };
 export default scroll;
