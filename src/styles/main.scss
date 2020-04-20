@@ -1,4 +1,5 @@
 @import "helpers/variables";
+@import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
 @import "vendor/libs";
@@ -22,5 +23,6 @@
 @import "components/title";
 @import "components/text";
 @import "components/slider";
+@import "components/player";
 
 @import "../blocks/modules";

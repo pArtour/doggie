@@ -4,6 +4,7 @@ import "./slider";
 import accordion from "./accordion";
 import scroll from "./scroll";
 import form from "./form";
+import player from "./player";
 
 accordion('gallery__accordion-btn', 'gallery__accordion-item');
 accordion('gallery__tab-btn', 'gallery__accordion-item');
@@ -13,5 +14,6 @@ scroll('reviews-link', 'customers');
 scroll('about-link', 'about');
 
 form('appointment__form');
+// player();
 
 document.addEventListener('DOMContentLoaded', document.querySelector('#search').focus())

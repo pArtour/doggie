@@ -67,10 +67,18 @@
                 max-height: 500px;
             }
         }
+        &-video {
+            position: relative;
+            margin: 0 auto;
+            max-width: 845px;
+        }
         &-live {
             display: flex;
             align-items: center;
             justify-content: center;
+            position: absolute;
+            top: 20px;
+            right: 20px;
             width: 68px;
             height: 30px;
             background-color: #62B58F;
@@ -105,6 +113,7 @@
         }
         &__accordion {
             &-item {
+                margin: 0;
                 opacity: 0;
                 max-height: 0;
                 transition: opacity .5s ease;
@@ -179,6 +188,8 @@
 @media screen and (min-width: 1440px) {
     .gallery {
         &__container {
+            width: 1400px;
+            margin: 0 auto;
             padding: 100px 80px;
         }
     }
