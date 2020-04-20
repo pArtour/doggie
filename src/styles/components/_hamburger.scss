@@ -40,19 +40,6 @@
     }
 }
 
-.hamburger.active {
-    span {
-        background: transparent;
-
-        &:before {
-            transform: rotate(45deg) translate(-6px, 20px);
-        }
-
-        &:after {
-            transform: rotate(-45deg) translate(-6px, -20px);
-        }
-    }
-}
 .body_active {
     overflow: hidden;
 }
